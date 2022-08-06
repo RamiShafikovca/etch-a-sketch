@@ -35,7 +35,6 @@ function addGridListeners () {
 }
 
 promptSlider.addEventListener('input', () => {
-    console.log(promptSlider.value);
     sliderValue.innerHTML = `${promptSlider.value} x ${promptSlider.value}`;
 
 });

@@ -5,6 +5,7 @@ html {
 .slider {
     display: flex;
     align-items: center;
+    gap: .5rem;
 }
 
 .slider p {
@@ -41,7 +42,7 @@ body {
 #gridContainer {
     display: flex;
     flex-flow: column;
-    border: 2px solid black;
+    border: .1rem solid black;
 }
 
 .gridRow {
