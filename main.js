@@ -4,6 +4,8 @@ gridContainer.setAttribute('style', `height: ${GRIDSIZE}px`);
 gridContainer.setAttribute('style', `width: ${GRIDSIZE}px`);
 const promptSlider = document.querySelector('input');
 const sliderValue = document.querySelector('p#sliderValue');
+const colors = ['violet', 'indigo', 'blue', 'green', 'yellow', 'orange', 'red'];
+let colorCount = 0;
 
 generateGrid();
 
@@ -28,8 +30,10 @@ function generateGrid (GRIDCOUNT = 16) {
 function addGridListeners () {
     const gridItems = document.querySelectorAll('div.gridItem');
     gridItems.forEach((item) => {
-        item.addEventListener('mouseenter', () =>{
-            item.classList.add('selected');
+        item.addEventListener('mouseout', () =>{
+            item.setAttribute('id', `${colors[colorCount]}`);
+            colorCount++;
+            colorCount = colorCount % 7;
         });
     });
 }
