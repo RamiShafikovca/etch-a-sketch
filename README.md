@@ -4,7 +4,7 @@ Sketchpad webpage for doodling
 
 Created with HTML, CSS, and JavaScript
 
-**Github Pages Preview** [here](https://ramishafikovca.github.io/etch-a-sketch)
+[**Github Pages Preview**] (https://ramishafikovca.github.io/etch-a-sketch)
 
 ## Features:
 Specify your canvas size from a slider
