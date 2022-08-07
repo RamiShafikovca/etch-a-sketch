@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch-a-Sketch</title>
-    <script src="main.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="title">Etch-a-Sketch</div>
-    <div class="slider">
-    <input type="range" min="4" max="100" step="4">
-    <p id="sliderValue">16 x 16</p>
-    </div>
-    <div id="gridContainer"></div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Etch-a-Sketch</title>
+        <script src="main.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="title">Etch-a-Sketch</div>
+        <div class="main">
+            <div class="sidebar">
+                <div class="slider">
+                    <div id="sliderValue">Size: 16 x 16</div>
+                    <input type="range" min="4" max="100" step="4" value="16">
+                </div>
+                <div>
+                    <div>Colors:</div>
+                        <div class="radio">
+                            <input type="radio" id="black" name="colors" value="black" checked="checked">
+                            <label for="black">Black</label><br>
+                            <input type="radio" id="rainbow" name="colors" value="rainbow">
+                            <label for="rainbow">Rainbow</label><br>
+                            <input type="radio" id="gruvbox" name="colors" value="gruvbox">
+                            <label for="gruvbox">Gruvbox</label><br>
+                            <input type="radio" id="random" name="colors" value="random">
+                            <label for="random">Random</label>
+                        </div>
+                </div>
+                <button class="clearGrid">Clear</button>
+            </div>
+            <div id="gridContainer"></div>
+        </div>
+        <a href="https://github.com/ramishafikovca/Etch-a-Sketch">
+            <div class="footer">
+                <img src="github.png" alt="Github">
+                Source
+            </div>
+        </a>
+    </body>
 </html>
